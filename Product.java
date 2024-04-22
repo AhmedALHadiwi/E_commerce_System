@@ -14,12 +14,7 @@ public class Product {
     }
 
     public void setProductId(int productId) {
-        if(productId>=0) {
-            this.productId = productId;
-        }
-        else {
             this.productId=Math.abs(productId);
-        }
     }
 
     public String getName() {
@@ -35,11 +30,6 @@ public class Product {
     }
 
     public void setPrice(float price) {
-        if (price>=0) {
-            this.price = price;
-        }
-        else {
             this.price =Math.abs(price);
-        }
     }
 }
