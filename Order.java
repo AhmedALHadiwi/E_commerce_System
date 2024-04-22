@@ -21,7 +21,6 @@ public class Order extends Cart{
     }
 
     public void setTotalPrice(float totalPrice) {
-        if (totalPrice>=0) {
             this.totalPrice =Math.abs(totalPrice);
     }
     public void printOrderInfo(Cart cart){
