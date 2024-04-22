@@ -13,12 +13,7 @@ public class Cart {
     }
 
     public void setCustomerId(int customerId) {
-        if (customerId>=0) {
-            this.customerId = customerId;
-        }
-        else {
-            this.customerId = Math.abs(customerId);
-        }
+          this.customerId = Math.abs(customerId);
     }
 
     public int getnProducts() {
@@ -26,12 +21,7 @@ public class Cart {
     }
 
     public void setnProducts(int nProducts) {
-        if (nProducts>=0) {
-            this.nProducts = nProducts;
-        }
-        else {
             this.nProducts = Math.abs(nProducts);
-        }
     }
     public int getN() {
         return n;
