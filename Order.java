@@ -5,7 +5,7 @@ public class Order extends Cart{
     private float totalPrice = calculatePrice(getProducts()) ;
 
     public int Order(){
-        return orderId;
+        return orderId++;
     }
 
     public int getOrderId() {
