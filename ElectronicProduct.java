@@ -21,11 +21,6 @@ public class ElectronicProduct extends Product{
     }
 
     public void setWarrantyPeriod(int warrantyPeriod) {
-        if (warrantyPeriod>=0) {
-            this.warrantyPeriod = warrantyPeriod;
-        }
-        else {
             this.warrantyPeriod= Math.abs(warrantyPeriod);
-        }
     }
 }

@@ -13,12 +13,7 @@ public class Order extends Cart{
     }
 
     public void setOrderId(int orderId) {
-        if (orderId>=0) {
-            this.orderId = orderId;
-        }
-        else {
             this.orderId =Math.abs(orderId);
-        }
     }
 
     public float getTotalPrice() {
@@ -26,12 +21,7 @@ public class Order extends Cart{
     }
 
     public void setTotalPrice(float totalPrice) {
-        if (totalPrice>=0) {
-            this.totalPrice = totalPrice;
-        }
-        else {
             this.totalPrice =Math.abs(totalPrice);
-        }
     }
     public void printOrderInfo(Cart cart){
         JOptionPane.showMessageDialog(null,"Order ID : "+getOrderId());

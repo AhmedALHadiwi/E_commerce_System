@@ -9,12 +9,7 @@ public class Customer {
     }
 
     public void setCustomerId(int customerId) {
-        if (customerId>=0) {
-            this.customerId = customerId;
-        }
-        else {
-            this.customerId = Math.abs(customerId);
-        }
+         this.customerId = Math.abs(customerId);
     }
 
     public String getName() {
